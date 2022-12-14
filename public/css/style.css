@@ -21315,7 +21315,10 @@ i {
   height: 80vh;
   width: 100%;
   background-color: black;
+  z-index: -3;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 .section1-box {
@@ -21361,6 +21364,86 @@ i {
 .section1-div3 {
   height: 20%;
   width: 100%;
+  display: flex;
+}
+
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 2px solid white;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+.fill:hover {
+  border: none;
+  transition: 1s;
+}
+.fill::after {
+  content: "";
+  background-color: rgb(255, 144, 131);
+  width: 100%;
+  border-radius: 30px;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.section1-div3-gauche {
+  height: 100%;
+  width: 80%;
+}
+
+.section1-div3-gauche {
+  height: 100%;
+  width: 20%;
+}
+
+.fill2 {
+  font-size: 10px;
+  letter-spacing: 1px;
+  outline: 0;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+.fill2 i {
+  font-size: 10px;
+}
+.fill2:hover {
+  border: none;
+  transition: 1s;
+}
+.fill2::after {
+  content: "";
+  background-color: rgb(255, 144, 131);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.fill2:hover::after {
+  top: 0px;
+  left: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
