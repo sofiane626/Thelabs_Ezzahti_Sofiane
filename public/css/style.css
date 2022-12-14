@@ -21331,6 +21331,31 @@ i {
 .section1-div2 {
   height: 50%;
   width: 100%;
+  display: flex;
+}
+.section1-div2 .section1-card1 {
+  height: 100%;
+  width: 32%;
+}
+.section1-div2 .section1-card1 i {
+  font-size: 80px;
+  color: rgb(255, 144, 131);
+}
+.section1-div2 .section1-card2 {
+  height: 100%;
+  width: 32%;
+}
+.section1-div2 .section1-card2 i {
+  font-size: 80px;
+  color: rgb(114, 223, 233);
+}
+.section1-div2 .section1-card3 {
+  height: 100%;
+  width: 32%;
+}
+.section1-div2 .section1-card3 i {
+  font-size: 80px;
+  color: rgb(168, 170, 241);
 }
 
 .section1-div3 {
