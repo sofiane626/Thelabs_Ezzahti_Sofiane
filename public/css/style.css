@@ -21306,7 +21306,6 @@ i {
   left: 7px;
   transition: 0.2s;
 }
-
 .fill2:hover::after {
   top: 0px;
   left: 0px;
