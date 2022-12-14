@@ -21147,7 +21147,7 @@ textarea.form-control-lg {
   }
 }
 .header-box {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 }
 
@@ -21273,6 +21273,40 @@ i {
   transition: 0.2s;
 }
 .fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.fill2 {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  height: 50%;
+  margin-top: 20px;
+  outline: 0;
+  border: 2px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+.fill2:hover {
+  border: none;
+  transition: 1s;
+}
+.fill2::after {
+  content: "";
+  background-color: rgb(255, 144, 131);
+  width: 100%;
+  border-radius: 30px;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.fill2:hover::after {
   top: 0px;
   left: 0px;
 }
