@@ -21505,4 +21505,68 @@ i {
   width: 80%;
 }
 
+.section3 {
+  height: 80vh;
+  width: 100%;
+  color: white;
+}
+.section3 p {
+  font-size: 13px;
+}
+
+.section3-box {
+  height: 95%;
+  width: 98%;
+  margin: auto;
+  display: flex;
+}
+
+.section3-gauche {
+  height: 100%;
+  width: 30%;
+}
+.section3-gauche img {
+  height: 100%;
+  width: 95%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.section3-droite {
+  height: 70%;
+  width: 70%;
+  background: black;
+  margin-top: 100px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3-div2 {
+  display: flex;
+  justify-content: space-between;
+  height: 65%;
+  width: 90%;
+}
+
+.section3-div1-1 {
+  height: 95%;
+  width: 45%;
+}
+
+.section3-div1-2 {
+  height: 95%;
+  width: 45%;
+}
+
+.section3-droite-box {
+  height: 90%;
+  width: 90%;
+}
+
+.test {
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */
