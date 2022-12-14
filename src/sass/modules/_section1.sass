@@ -1,0 +1,112 @@
+.section1
+    height: 80vh
+    width: 100%
+    background-color: black
+    z-index: -3
+    color: white
+    display: flex
+    align-items: center
+
+.section1-box
+    width: 70%
+    margin: auto
+
+.section1-div1
+    height: 30%
+    width: 100%
+
+.section1-div2
+    height: 50%
+    width: 100%
+    display: flex
+    .section1-card1
+        height: 100%
+        width: 32%
+        i
+            font-size: 80px
+            color: rgb(255,144,131)
+    .section1-card2
+        height: 100%
+        width: 32%
+        i
+            font-size: 80px
+            color: rgb(114,223,233)
+    .section1-card3
+        height: 100%
+        width: 32%
+        i
+            font-size: 80px
+            color: rgb(168,170,241)
+
+.section1-div3
+    height: 20%
+    width: 100%
+    display: flex
+
+.fill
+    font-size: 20px
+    font-weight: 200
+    letter-spacing: 1px
+    padding: 13px 50px 13px
+    outline: 0
+    border: 2px solid white
+    color: white
+    border-radius: 30px
+    cursor: pointer
+    position: relative
+    background-color: rgba(0, 0, 0, 0)
+    z-index: 1
+    &:hover
+        border: none
+        transition: 1s
+    &::after
+        content: ""
+        background-color: rgb(255,144,131)
+        width: 100%
+        border-radius: 30px
+        z-index: -1
+        position: absolute
+        height: 100%
+        top: 7px
+        left: 7px
+        transition: 0.2s
+    &:hover::after
+        top: 0px
+        left: 0px
+
+.section1-div3-gauche
+    height: 100%
+    width: 80%
+
+.section1-div3-gauche
+    height: 100%
+    width: 20%
+
+.fill2
+    font-size: 10px
+    letter-spacing: 1px
+    outline: 0
+    border: 2px solid white
+    color: white
+    cursor: pointer
+    position: relative
+    background-color: rgba(0, 0, 0, 0)
+    z-index: 1
+    i
+        font-size: 10px
+    &:hover
+        border: none
+        transition: 1s
+    &::after
+        content: ""
+        background-color: rgb(255,144,131)
+        width: 100%
+        z-index: -1
+        position: absolute
+        height: 100%
+        top: 7px
+        left: 7px
+        transition: 0.2s
+    &:hover::after
+        top: 0px
+        left: 0px
