@@ -21646,8 +21646,6 @@ i {
 .section4-li-btn {
   color: #545454;
   border: none !important;
-}
-.section4-li-btn:active {
   border-bottom: 2px solid #00ffd0 !important;
 }
 
