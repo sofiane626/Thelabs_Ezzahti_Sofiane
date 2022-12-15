@@ -21987,4 +21987,25 @@ i {
   width: 25px;
 }
 
+.section7 {
+  height: 90vh;
+  width: 100%;
+}
+
+.section7-box {
+  height: 95%;
+  width: 95%;
+  margin: auto;
+}
+
+.section7-haut {
+  height: 25%;
+  width: 100%;
+}
+
+.section7-bas {
+  height: 75%;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
