@@ -48,5 +48,15 @@
     height: 90%
     width: 90%
 
+.test::before
+    content: "\2192"
+    position: absolute
+    color: rgb(255,144,131)
+    font-size: 25px !important
+    left: -25px
+
 .test
-    display: flex
+    position: relative
+    &:hover
+        color: rgb(255,144,131)
+        cursor: pointer

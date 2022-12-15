@@ -21565,8 +21565,20 @@ i {
   width: 90%;
 }
 
+.test::before {
+  content: "→";
+  position: absolute;
+  color: rgb(255, 144, 131);
+  font-size: 25px !important;
+  left: -25px;
+}
+
 .test {
-  display: flex;
+  position: relative;
+}
+.test:hover {
+  color: rgb(255, 144, 131);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
