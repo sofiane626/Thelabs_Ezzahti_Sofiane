@@ -21627,4 +21627,28 @@ i {
   border-radius: 10px;
 }
 
+.text1 {
+  height: 50%;
+  width: 100%;
+}
+
+.section4-nav {
+  gap: 30px;
+  border: none;
+  color: #545454;
+}
+
+.section4-li {
+  border: none !important;
+  color: #000;
+}
+
+.section4-li-btn {
+  color: #545454;
+  border: none !important;
+}
+.section4-li-btn:active {
+  border-bottom: 2px solid #00ffd0 !important;
+}
+
 /*# sourceMappingURL=style.css.map */
