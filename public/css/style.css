@@ -21511,15 +21511,31 @@ i {
 .colonne1:hover {
   background-color: black;
   color: white;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 .colonne1:hover i {
   color: white;
+}
+.colonne1:hover .section2-fleche {
+  transform: rotate(360deg);
+}
+.colonne1 .section2-fleche {
+  transform: rotate(0deg);
+  transition: 0.5s;
 }
 
 .col-box {
   height: 70%;
   width: 80%;
+  position: relative;
+}
+
+.section2-fleche {
+  position: absolute;
+  top: 0;
+  right: 0;
+  rotate: -45deg;
+  font-size: 30px;
 }
 
 .section3 {
