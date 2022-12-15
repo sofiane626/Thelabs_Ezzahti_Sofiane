@@ -21627,4 +21627,155 @@ i {
   border-radius: 10px;
 }
 
+.section5 {
+  height: 95vh;
+  width: 100%;
+}
+
+.section5-box {
+  height: 95%;
+  width: 80%;
+  margin: auto;
+  gap: 10px;
+}
+
+.section5-div {
+  height: 10%;
+  width: 100%;
+}
+
+.section5-card {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section5-card1 {
+  height: 100%;
+  width: 31%;
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+}
+
+.section5-card2 {
+  height: 100%;
+  width: 31%;
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+  background-color: #1d1d1d;
+  color: #ffffff;
+}
+
+.section5-card3 {
+  height: 100%;
+  width: 31%;
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+}
+
+.section5-div1 {
+  height: 40%;
+  width: 90%;
+  margin: auto;
+  background-image: url("../../public/img/gris.png");
+  background-size: 70%;
+  object-fit: cover;
+  background-position: 48% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section5-div1-1 {
+  height: 40%;
+  width: 90%;
+  margin: auto;
+  background-image: url("../../public/img/gris-foncé.png");
+  background-size: 70%;
+  object-fit: cover;
+  background-position: 48% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section5-p1 {
+  font-size: 25px;
+  padding: 0;
+}
+
+.section5-prix {
+  font-size: 40px;
+  margin: 0px;
+}
+
+.section5-p2 {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.section5-div2 {
+  height: 45%;
+  width: 80%;
+  margin: auto;
+}
+
+.section5-div3 {
+  height: 15%;
+  width: 95%;
+  margin: auto;
+}
+
+.section5-row {
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+
+.section5-row1 {
+  height: 100%;
+  width: 80%;
+}
+
+.section5-row2 {
+  height: 100%;
+  width: 20%;
+}
+
+.fill5 {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 10px 40px 10px;
+  outline: 0;
+  border: 2px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+.fill5:hover {
+  border: none;
+  transition: 1s;
+}
+.fill5::after {
+  content: "";
+  background-color: rgb(255, 144, 131);
+  width: 100%;
+  border-radius: 30px;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.fill5:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
 /*# sourceMappingURL=style.css.map */
