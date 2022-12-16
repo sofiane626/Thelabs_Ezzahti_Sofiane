@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "police1";
+  src: url(../fonts/police1.ttf);
+}
+@font-face {
+  font-family: "police2";
+  src: url(../fonts/police2.ttf);
+}
 /*!
  * Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -21146,15 +21154,29 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: "police2" !important;
+}
+
 .header-box {
   height: 80vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.68);
+}
+
+.police1 {
+  font-family: "police1" !important;
 }
 
 .nav-bar {
   height: 10%;
-  width: 90%;
+  width: 100%;
   margin: auto;
+  background-color: white;
 }
 
 .head {
@@ -21166,6 +21188,12 @@ textarea.form-control-lg {
   gap: 20px;
 }
 
+nav {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
 .nav-bar nav {
   display: flex;
   justify-content: space-between;
@@ -21175,6 +21203,8 @@ textarea.form-control-lg {
 .nav-bar-div1 {
   height: 100%;
   width: 20%;
+  display: flex;
+  align-items: center;
 }
 .nav-bar-div1 img {
   height: 30px;
@@ -21195,13 +21225,62 @@ textarea.form-control-lg {
   gap: 30px;
   justify-content: center;
 }
+.nav-bar-div2 ul li {
+  cursor: pointer;
+  position: relative;
+}
+.nav-bar-div2 ul li:hover {
+  color: rgb(255, 144, 131) !important;
+}
+.nav-bar-div2 ul li:hover::before {
+  opacity: 100;
+  transform: translateY(10px);
+}
+.nav-bar-div2 ul li::before {
+  content: "•";
+  font-size: 3em;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  transform: translateY(5px);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.header-dropdown a {
+  position: relative;
+}
+.header-dropdown a:hover {
+  color: rgb(255, 144, 131) !important;
+}
+.header-dropdown a:hover::before {
+  opacity: 100;
+  transform: translateX(-55px);
+}
+.header-dropdown a::before {
+  content: "•";
+  font-size: 3em;
+  position: absolute;
+  top: -13px;
+  left: 40%;
+  transform: translateX(-40px);
+  opacity: 0;
+  transition: 0.2s;
+}
 
 .nav-bar-div3 {
   height: 100%;
-  width: 20%;
+  width: 25%;
   gap: 20px;
   display: flex;
   justify-content: end;
+}
+
+.dropdown-menu {
+  border: solid 2px black;
+}
+.dropdown-menu a {
+  cursor: pointer;
 }
 
 .nav-btn1 {
@@ -21235,8 +21314,8 @@ textarea.form-control-lg {
 }
 
 .head-img {
-  height: 70%;
-  width: 90%;
+  height: 90%;
+  width: 70%;
   border-radius: 10px;
 }
 
@@ -21244,40 +21323,46 @@ i {
   padding: 0;
 }
 
-.fill {
+.head-div2 {
+  display: flex;
+  align-items: center;
+}
+
+.fill-11 {
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 1px;
-  padding: 13px 50px 13px;
+  height: 70%;
+  margin-top: 12px;
   outline: 0;
   border: 2px solid black;
-  border-radius: 30px;
+  border-radius: 50px;
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
 }
-.fill:hover {
+.fill-11:hover {
   border: none;
   transition: 1s;
 }
-.fill::after {
+.fill-11::after {
   content: "";
-  background-color: rgb(255, 144, 131);
+  background-color: #41ffff;
   width: 100%;
   border-radius: 30px;
   z-index: -1;
   position: absolute;
   height: 100%;
-  top: 7px;
-  left: 7px;
+  top: 5px;
+  left: 5px;
   transition: 0.2s;
 }
-.fill:hover::after {
+.fill-11:hover::after {
   top: 0px;
   left: 0px;
 }
 
-.fill2 {
+.fill-12 {
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -21285,16 +21370,16 @@ i {
   margin-top: 20px;
   outline: 0;
   border: 2px solid black;
-  border-radius: 30px;
+  border-radius: 50%;
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
 }
-.fill2:hover {
+.fill-12:hover {
   border: none;
   transition: 1s;
 }
-.fill2::after {
+.fill-12::after {
   content: "";
   background-color: rgb(255, 144, 131);
   width: 100%;
@@ -21302,13 +21387,18 @@ i {
   z-index: -1;
   position: absolute;
   height: 100%;
-  top: 7px;
-  left: 7px;
+  top: 5px;
+  left: 5px;
   transition: 0.2s;
 }
-.fill2:hover::after {
+.fill-12:hover::after {
   top: 0px;
   left: 0px;
+}
+
+.i1 {
+  height: 30px;
+  width: 30px;
 }
 
 .section1 {
@@ -21414,6 +21504,10 @@ i {
 .section1-div3-gauche {
   height: 100%;
   width: 70%;
+}
+
+.police1 {
+  font-family: "police1";
 }
 
 .section1-div3-droite {
@@ -21686,6 +21780,7 @@ i {
 .section5 {
   height: 95vh;
   width: 100%;
+  z-index: -5;
 }
 
 .section5-box {
@@ -21830,6 +21925,41 @@ i {
   transition: 0.2s;
 }
 .fill5:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.fill5-1 {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 10px 40px 10px;
+  color: black;
+  outline: 0;
+  border: 2px solid black;
+  border-radius: 30px;
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+.fill5-1:hover {
+  border: none;
+  transition: 1s;
+}
+.fill5-1::after {
+  content: "";
+  background-color: #44ffff;
+  width: 100%;
+  border-radius: 30px;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.fill5-1:hover::after {
   top: 0px;
   left: 0px;
 }

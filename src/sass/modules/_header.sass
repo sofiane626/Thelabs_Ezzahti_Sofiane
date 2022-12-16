@@ -1,11 +1,23 @@
+body
+    font-family: "police2"!important
+
 .header-box
     height: 80vh
     width: 100%
+    display: flex
+    align-items: center
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.68)
+    -webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.68)
+    -moz-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.68)
+
+.police1
+    font-family: "police1" !important
 
 .nav-bar
     height: 10%
-    width: 90%
+    width: 100%
     margin: auto
+    background-color: white
 
 .head
     height: 90%
@@ -14,6 +26,11 @@
     align-items: center
     justify-content: center
     gap: 20px
+
+nav
+    width: 80%
+    height: 100%
+    margin: auto
 
 .nav-bar
     nav
@@ -24,6 +41,8 @@
 .nav-bar-div1
     height: 100%
     width: 20%
+    display: flex
+    align-items: center
     img
         height: 30px
         width: 30px
@@ -40,13 +59,53 @@
         display: flex
         gap: 30px
         justify-content: center
+        li
+            cursor: pointer
+            position: relative
+            &:hover
+                color: rgb(255,144,131)!important
+                &::before
+                    opacity: 100
+                    transform: translateY(10px)
+            &::before
+                content: '\002022'
+                font-size: 3em
+                position: absolute
+                top: 0
+                left: 40%
+                transform: translateY(5px)
+                opacity: 0
+                transition: 0.2s
+
+.header-dropdown
+    a
+        position: relative
+        &:hover
+            color: rgb(255,144,131)!important
+            &::before
+                opacity: 100
+                transform: translateX(-55px)
+        &::before
+            content: '\002022'
+            font-size: 3em
+            position: absolute
+            top: -13px
+            left: 40%
+            transform: translateX(-40px)
+            opacity: 0
+            transition: 0.2s
 
 .nav-bar-div3
     height: 100%
-    width: 20%
+    width: 25%
     gap: 20px
     display: flex
     justify-content: end
+
+.dropdown-menu
+    border: solid 2px black
+    a
+        cursor: pointer
 
 .nav-btn1
     height: 50px
@@ -73,21 +132,26 @@
     width: 25%
 
 .head-img
-    height: 70%
-    width: 90%
+    height: 90%
+    width: 70%
     border-radius: 10px
 
 i
     padding: 0
 
-.fill
+.head-div2
+    display: flex
+    align-items: center
+
+.fill-11
     font-size: 20px
     font-weight: 200
     letter-spacing: 1px
-    padding: 13px 50px 13px
+    height: 70%
+    margin-top: 12px
     outline: 0
     border: 2px solid black
-    border-radius: 30px
+    border-radius: 50px
     cursor: pointer
     position: relative
     background-color: rgba(0, 0, 0, 0)
@@ -96,20 +160,20 @@ i
         transition: 1s
     &::after
         content: ""
-        background-color: rgb(255,144,131)
+        background-color: #41ffff
         width: 100%
         border-radius: 30px
         z-index: -1
         position: absolute
         height: 100%
-        top: 7px
-        left: 7px
+        top: 5px
+        left: 5px
         transition: 0.2s
     &:hover::after
         top: 0px
         left: 0px
 
-.fill2
+.fill-12
     font-size: 20px
     font-weight: 200
     letter-spacing: 1px
@@ -117,7 +181,7 @@ i
     margin-top: 20px
     outline: 0
     border: 2px solid black
-    border-radius: 30px
+    border-radius: 50%
     cursor: pointer
     position: relative
     background-color: rgba(0, 0, 0, 0)
@@ -132,9 +196,13 @@ i
         z-index: -1
         position: absolute
         height: 100%
-        top: 7px
-        left: 7px
+        top: 5px
+        left: 5px
         transition: 0.2s
     &:hover::after
         top: 0px
         left: 0px
+
+.i1
+    height: 30px
+    width: 30px
