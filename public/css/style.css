@@ -22188,12 +22188,22 @@ footer {
 
 .footer-div3 {
   height: 25%;
-  width: 100%;
+  width: 17%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-div4 {
   height: 15%;
-  width: 100%;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.footer-div4 a {
+  color: white !important;
 }
 
 .footer-div5 {
@@ -22332,6 +22342,22 @@ footer {
 .fill-footer2:hover::after {
   top: 0px;
   left: 0px;
+}
+
+.footer-div3-i {
+  color: white;
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.footer-div3-i:hover {
+  background-color: #58dbff;
 }
 
 /*# sourceMappingURL=style.css.map */
