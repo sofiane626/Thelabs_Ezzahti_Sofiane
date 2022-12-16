@@ -22140,4 +22140,16 @@ i {
   left: 0px;
 }
 
+.section9 {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.section9-box {
+  height: 70%;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
