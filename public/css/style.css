@@ -21737,6 +21737,24 @@ i {
   font-size: 30px;
 }
 
+@media (max-width: 666px) and (min-width: 320px) {
+  .section2 {
+    height: 300vh;
+  }
+  .section2-div2 {
+    flex-wrap: wrap;
+  }
+  .colonne {
+    height: 32%;
+    width: 100%;
+  }
+  .section2-div1 {
+    height: 10%;
+  }
+  .section2-div2 {
+    height: 90%;
+  }
+}
 .section3 {
   height: 80vh;
   width: 100%;
