@@ -22131,6 +22131,26 @@ i {
   left: 0px;
 }
 
+@media (max-width: 666px) and (min-width: 320px) {
+  .section5 {
+    height: 300vh;
+  }
+  .section5-card {
+    flex-wrap: wrap;
+  }
+  .section5-card1 {
+    height: 32%;
+    width: 95%;
+  }
+  .section5-card2 {
+    height: 32%;
+    width: 95%;
+  }
+  .section5-card3 {
+    height: 32%;
+    width: 95%;
+  }
+}
 .section6 {
   height: 90vh;
   width: 100%;
