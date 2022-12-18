@@ -21438,6 +21438,15 @@ i {
     margin: auto;
     margin-left: 100px;
   }
+  .nav-bar-div1 {
+    display: none;
+  }
+  .nav-bar-div2 {
+    margin: auto;
+  }
+  .nav-bar-div3 {
+    display: none;
+  }
 }
 .section1 {
   height: 100vh;
